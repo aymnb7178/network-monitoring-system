@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "network-monitoring-system"
+version = "0.1.0"
+description = "Defensive network monitoring toolkit: TCP availability/latency monitor, localhost-safe port scanner, ARP device inventory, flow anomaly detection on synthetic data, alerting and an HTML dashboard"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Aymen Al Erwi" }]
+dependencies = ["numpy>=1.26", "pandas>=2.0", "scikit-learn>=1.4", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+netmon = "netmon.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["netmon*"]
+
+[tool.setuptools.package-data]
+netmon = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

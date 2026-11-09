@@ -1,0 +1,22 @@
+{
+  "_comment": "Small bundled list of a few well-known OUI prefixes (virtualisation vendors, Raspberry Pi, a handful of large vendors). It is NOT the IEEE registry: most real devices will show as unknown.",
+  "prefixes": {
+    "00:50:56": "VMware",
+    "00:0C:29": "VMware",
+    "00:05:69": "VMware",
+    "08:00:27": "Oracle VirtualBox",
+    "52:54:00": "QEMU/KVM",
+    "00:15:5D": "Microsoft Hyper-V",
+    "B8:27:EB": "Raspberry Pi Foundation",
+    "DC:A6:32": "Raspberry Pi Trading",
+    "E4:5F:01": "Raspberry Pi Trading",
+    "00:00:0C": "Cisco Systems",
+    "00:E0:4C": "Realtek",
+    "00:03:93": "Apple",
+    "00:0A:95": "Apple",
+    "00:1C:B3": "Apple",
+    "00:0D:3A": "Microsoft",
+    "00:50:F2": "Microsoft",
+    "00:1A:11": "Google"
+  }
+}
